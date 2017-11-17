@@ -9,6 +9,7 @@ public class JDBC {
   public static void main(String[] argv) {
     System.out.println("Program Start");
     Connection connection = null;
+    
       try {
         Class.forName("com.mysql.jdbc.Driver");
       } catch (ClassNotFoundException e) {
@@ -31,5 +32,6 @@ public class JDBC {
     } else {
       System.out.println("Connection Fail");
     }
+    
   }
 }
